@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --project frontend && tsc --project backend",
+    "start": "node backend/server.ts",
+    "watch": "node --watch backend/server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@jsenv/importmap-node-module": "^7.3.0",
+    "chalk": "^5.4.1",
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

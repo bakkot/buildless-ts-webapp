@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "types": [],
+    "lib": ["ESNext"],
+    "noEmit": true, // no building!
+    "strict": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true, // required unless you also want to map requests for .js files to .ts in the server
+    "erasableSyntaxOnly": true, // if omitted, you need to pass `--experimental-transform-types`
+    "verbatimModuleSyntax": true
+  }
+}
