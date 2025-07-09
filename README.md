@@ -70,6 +70,10 @@ If you're getting an error about a script not providing some export, it is very 
 
 Nope, sorry.
 
+## What about Bun / Deno / whatever?
+
+As of this writing those runtimes don't have `stripTypeScriptTypes` (possibly they have an equivalent; I haven't checked), but you can add a dependency on [amaro](https://www.npmjs.com/package/amaro) and then use its `transformSync` function - that's what node is using [under the hood](https://github.com/nodejs/node/blob/793a2792d5777cd59ec150e445196ffbabbc1421/lib/internal/modules/typescript.js#L47-L48) anyway.
+
 ## Is this really "buildless"?
 
 Eh, depends on your definitions. As far as I'm concerned, the fact that you don't have to run a build command after making changes and can write your HTML to refer to your actual `.ts` files instead of some other directory means this counts.
